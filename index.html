@@ -3,575 +3,575 @@
     <head>
         <title>Upingtonia - Wikipedia</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <!--Would have made separate stylesheets for
-        each section for ease of reference (header, sidebar, 
-        main etc) but since requested to only make the two index and 
-        styles files, all styling is in one file-->
         <link rel="icon" type="image" 
         href="icons/Wikipedia_W_favicon_on_white_background.png">
     </head>
-    <body><!--MAKE LINE BREAKS WHERE NECESSARY 
-    FOR EASIER OVERVIEW OF CODE-->
-        <div class="content-body">
-            <header class="header">
-                <div class="header-left-section">
-                    <img src="icons/menu.svg" class="header-hamburger-menu">   
-                    <a href="https://en.wikipedia.org/wiki/Main_Page">
-                        <div class="wiki-container">
-                            <img src="icons/wikipedia.png" 
-                            class="wikipedia-globe-icon">
-                            <div class="wikipedia-logos-container">
-                                <img src="icons/wikipedia-wordmark-en.svg" 
-                                class="wikipedia-wordmark-icon">
-                                <img src="icons/wikipedia-tagline-en.svg" 
-                                class="wikipedia-tagline-icon">
-                            </div>
-                        </div>   
-                    </a>    
-                </div>
-                <div class="header-right-grid-container">
-                    <div class="header-middle-section">
-                        <input type="search" placeholder="Search Wikipedia" 
-                        class="search-bar">
-                        <a href="https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch">    
-                            <button class="search-button">
-                                Search
-                            </button>
+    <body>
+        <div id="main-flexbox-container">
+            <div class="content-body">
+                <header class="header">
+                    <div class="header-left-section">
+                        <img src="icons/menu.svg" class="header-hamburger-menu">   
+                        <a href="https://en.wikipedia.org/wiki/Main_Page">
+                            <div class="wiki-container">
+                                <img src="icons/wikipedia.png" 
+                                class="wikipedia-globe-icon">
+                                <div class="wikipedia-logos-container">
+                                    <img src="icons/wikipedia-wordmark-en.svg" 
+                                    class="wikipedia-wordmark-icon">
+                                    <img src="icons/wikipedia-tagline-en.svg" 
+                                    class="wikipedia-tagline-icon">
+                                </div>
+                            </div>   
                         </a>    
-                    </div>    
-                    <div class="header-right-section">
-                        <a href="https://en.wikipedia.org/wiki/Special:Search" 
-                        class="search-icon-container">
-                            <img src="icons/search.svg" class="search-icon">
-                        </a>
-                        <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Upingtonia" 
-                        class="create-account-link">
-                            Create account
-                        </a>
-                        <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Upingtonia" 
-                        class="login-link">
-                            Log in
-                        </a>
-                        <img src="icons/ellipsis.svg" class="ellipsis-icon">
                     </div>
-                </div>
+                    <div class="header-right-grid-container">
+                        <div class="header-middle-section">
+                            <input type="search" placeholder="Search Wikipedia" 
+                            class="search-bar">
+                            <a href="https://en.wikipedia.org/w/index.php?search=&title=Special%3ASearch">    
+                                <button class="search-button">
+                                    Search
+                                </button>
+                            </a>    
+                        </div>    
+                        <div class="header-right-section">
+                            <a href="https://en.wikipedia.org/wiki/Special:Search" 
+                            class="search-icon-container">
+                                <img src="icons/search.svg" class="search-icon">
+                            </a>
+                            <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Upingtonia" 
+                            class="create-account-link">
+                                Create account
+                            </a>
+                            <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Upingtonia" 
+                            class="login-link">
+                                Log in
+                            </a>
+                            <img src="icons/ellipsis.svg" class="ellipsis-icon">
+                        </div>
+                    </div>
                 </header>
-            <nav class="sidebar">
-                <div class="sidebar-heading">Contents &#91;<a href="" 
-                    class="sidebar-hide-link">hide</a>&#93;</div>
-                <a href="https://en.wikipedia.org/wiki/Upingtonia#" 
-                class="sidebar-links sidebar-link-top">    
-                    <div><b>&#40;Top&#41;</b></div>
-                </a>    
-                <a href="https://en.wikipedia.org/wiki/Upingtonia#History" 
-                class="sidebar-links">            
-                    <div>History</div>
-                </a>    
-                <a href="https://en.wikipedia.org/wiki/Upingtonia#Notes" 
-                class="sidebar-links">
-                    <div>Notes</div>
-                </a>        
-            </nav>
-            <button class="fixed-pos-fullscreen-button">
-                <img src="icons/fullScreen.svg">
-            </button>
-            <main class="main-container">
-                <section>
-                    <div class="container heading-container">
-                        <h1 class="article-title">
-                            <img src="icons/listBullet.svg" 
-                            class="list-bullet-menu">Upingtonia
-                        </h1>
-                        <div class="language-dropdown">
-                            <img src="icons/language.svg">
-                            <a href="" class="language-link">8 languages</a>
-                            <img src="icons/arrow-down-progressive.svg">
-                        </div>
-                    </div>    
-                    <div class="container tool-bar">
-                        <div>
-                            <a href="https://en.wikipedia.org/wiki/Upingtonia" 
-                            class="article-links1">Article</a>
-                            <a href="https://en.wikipedia.org/wiki/Talk:Upingtonia" 
-                            class="article-links1">Talk</a>
-                        </div>
-                        <div class="tool-bar-right">
-                            <a href="https://en.wikipedia.org/wiki/Upingtonia" 
-                            class="article-links2">Read</a>
-                            <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit" 
-                            class="article-links2">Edit</a>
-                            <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=history" 
-                            class="article-links2">View history</a>
-                            <div class="tools-dropdown">
-                                <a href="" class="tools-link tools-tooltip-menu">Tools</a> 
-                                <img src="icons/arrow-down.svg">
+                <nav class="sidebar" aria-label="Sidebar navigation">
+                    <div class="sidebar-heading">Contents &#91;<a href="" 
+                        class="sidebar-hide-link">hide</a>&#93;</div>
+                    <a href="https://en.wikipedia.org/wiki/Upingtonia#" 
+                    class="sidebar-links sidebar-link-top">    
+                        <div><b>&#40;Top&#41;</b></div>
+                    </a>    
+                    <a href="https://en.wikipedia.org/wiki/Upingtonia#History" 
+                    class="sidebar-links">            
+                        <div>History</div>
+                    </a>    
+                    <a href="https://en.wikipedia.org/wiki/Upingtonia#Notes" 
+                    class="sidebar-links">
+                        <div>Notes</div>
+                    </a>        
+                </nav>
+                <button class="fixed-pos-fullscreen-button">
+                    <img src="icons/fullScreen.svg">
+                </button>
+                <main class="main-container">
+                    <nav aria-label="Article header links">
+                        <div class="container heading-container">
+                            <h1 class="article-title">
+                                <img src="icons/listBullet.svg" 
+                                class="list-bullet-menu">Upingtonia
+                            </h1>
+                            <div class="language-dropdown">
+                                <img src="icons/language.svg">
+                                <a href="" class="language-link">8 languages</a>
+                                <img src="icons/arrow-down-progressive.svg">
                             </div>
-                        </div>
-                    </div>
-                    <div class="container wiki-coordinates">
-                        <div class="source-footnote">From Wikipedia&#44; the free encyclopedia</div>
-                        <div class="coordinates-container">
-                            <a href="https://en.wikipedia.org/wiki/Geographic_coordinate_system" 
-                            class="coordinates">Coordinates&#58;</a>&nbsp;
-                            <a href=""><img src="icons/WMA_button2b.png.webp"></a>&nbsp; 
-                            <a href="https://geohack.toolforge.org/geohack.php?pagename=Upingtonia&params=19_34_S_18_7_E_type:country" 
-                            class="coordinates">19&deg;34&prime;S 18&deg;7&prime;E</a>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="main-content-container">
-                        <div class="main-content-subcontainer1">
+                        </div>    
+                        <div class="container tool-bar">
                             <div>
-                                <span class="bold-span">Lijdensrust</span>&#44; officially the 
-                                <span class="bold-span">Republic of Lijdensrust</span>&#44; was a 
-                                short&#45;lived 
-                                <a href="https://en.wikipedia.org/wiki/Boer_Republics" class="boer-republic-link">Boer republic
-                                    <div class="tooltip">
-                                        <div class="tooltip-sub-container-left">
-                                            The <span class="bold-span">Boer republics</span> were independent&#44; self&#45;govering 
-                                            republics formed by Dutch&#45;speaking inhabitants of the Cape Colony and their descendants&#46;
-                                            The founders &mdash; variously named Trekboers&#44; Boers and Voortrekkers &mdash; settled mainly 
-                                            in the middle&#44; northern&#44; north&#45;<img src="icons/Cog,_Web_Fundamentals.svg" class="tooltip-cog">
-                                        </div>
-                                        <img src="icons/Boer_Republics_Flags.png" class="boer-republics-img">
-                                    </div>
-                                </a> 
-                                in the area of present&#45;day 
-                                <a href="https://en.wikipedia.org/wiki/Namibia" class="namibia-link">Namibia
-                                    <div class="tooltip">
-                                        <img src="icons/Flag_of_Namibia.svg.png" class="namibia-img">
-                                        <div class="tooltip-sub-container-bottom">
-                                            <span class="bold-span">Namibia</span>&#44; officially the <span class="bold-span">Republic of Namibia</span>&#44;
-                                            is a country in Southern Africa&#46; Its western border is the Atlantic Ocean&#46;
-                                            It shares land borders with Zambia and Angola to the north&#44;
-                                            Botswana to the east and South Africa to the south and east&#46; Although
-                                            it does not border Zimbabwe&#44; less than 200 metres of the <img src="icons/Cog,_Web_Fundamentals.svg" 
-                                            class="tooltip-cog">
-                                        </div>
-                                    </div>
-                                </a>&#46; 
-                                Declared on 20 October 1885&#44; it was originally named <span class="bold-span">Upingtonia</span>&#44; 
-                                but changed its name soon after as the reason for its original 
-                                name proved worthless&#46; In 1887&#44; it was merged into 
-                                <a href="https://en.wikipedia.org/wiki/German_South-West_Africa" class="german-swa-link">German South-West Africa
-                                    <div class="tooltip">
-                                        <img src="icons/Reichskolonialflagge.svg.png" class="german-swa-img">
-                                        <div class="tooltip-sub-container-bottom">
-                                            <span class="bold-span">German South West Africa</span> was a colony of
-                                            the German Empire from 1884 until 1915&#44;
-                                            though Germany did not officially recognise its 
-                                            loss of this territory until the 1919 Treaty of 
-                                            Versailles&#46;<img src="icons/Cog,_Web_Fundamentals.svg" class="tooltip-cog">
-                                        </div>
-                                    </div>
-                                </a>&#46;
+                                <a href="https://en.wikipedia.org/wiki/Upingtonia" 
+                                class="article-links1">Article</a>
+                                <a href="https://en.wikipedia.org/wiki/Talk:Upingtonia" 
+                                class="article-links1">Talk</a>
                             </div>
-                            <div class="sub-header-container"><span class="main-sub-headers">History</span> &#91; 
-                                <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit&section=1" 
-                                class="edit-link">edit</a> &#93;
-                            </div>
-                            <div>
-                                <div class="paragraph-container">
-                                Between the years 1874 and 1880&#44; farmers migrated from the 
-                                <a href="https://en.wikipedia.org/wiki/South_African_Republic">Transvaal</a> to what was then southern 
-                                <a href="https://en.wikipedia.org/wiki/Angola">Angola</a>. There&#44; they came 
-                                into conflict with the Portuguese colonial authorities&#44; and some 
-                                of their number decided to return to the Transvaal&#44; while others 
-                                migrated further south&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-marais-1" 
-                                class="superscript">&#91;1&#93;</a></sup>
+                            <div class="tool-bar-right">
+                                <a href="https://en.wikipedia.org/wiki/Upingtonia" 
+                                class="article-links2">Read</a>
+                                <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit" 
+                                class="article-links2">Edit</a>
+                                <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=history" 
+                                class="article-links2">View history</a>
+                                <div class="tools-dropdown">
+                                    <a href="" class="tools-link tools-tooltip-menu">Tools</a> 
+                                    <img src="icons/arrow-down.svg">
                                 </div>
-
-                                <div class="paragraph-container">
-                                In 1885&#44; <a href="https://en.wikipedia.org/wiki/William_Worthington_Jordan">William Worthington Jordan</a> 
-                                bought a tract &#40;fifty thousand square kilometers&#41; of land from the <a 
-                                href="https://en.wikipedia.org/wiki/Ovambo_people">Ovambo</a> chief Kambonde for three hundred 
-                                <a href="https://en.wikipedia.org/wiki/Pound_sterling">
-                                pounds</a>&#44; paid as twenty-five firearms&#44; one salted horse&#44; and a cask of brandy&#46;<sup><a 
-                                href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-2" class="superscript">&#91;2&#93;</a></sup>
-                                This land stretched almost 170 kilometres &#40;110 mi&#41; 
-                                from <a href="https://en.wikipedia.org/wiki/Okaukuejo">Okaukuejo</a> in the west to <a 
-                                href="https://en.wikipedia.org/w/index.php?title=Fischer%27s_Pan&action=edit&redlink=1" class="red-link">Fischer's Pan</a> 
-                                in the east&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-3" class="superscript">&#91;3&#93;</a></sup> 
-                                Chief Kambonde relied on the help of Jordan to defeat his rival for power&#44; Nehale&#46;
-                                </div>
-
-                                <div class="paragraph-container">
-                                Between 1876 and 1879&#44; at the time of the <a href="https://en.wikipedia.org/wiki/Dorsland_Trek">
-                                Dorsland Trek</a>&#44; Boers had crossed the area&#44; heading for Angola&#46; In 1885 some of these trekkers 
-                                returned and settled at <a href="https://en.wikipedia.org/wiki/Grootfontein">Grootfontein</a> on land given to them free of 
-                                charge by Jordan&#46; The Republic of Upingtonia was declared on 20 
-                                October 1885&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-marais-1" class="superscript">&#91;1&#93;
-                                </a></sup> At that time&#44; the population of Upingtonia was 
-                                around five hundred settlers&#46; The state was named after <a href="https://en.wikipedia.org/wiki/Thomas_Upington">Thomas 
-                                Upington</a>&#44; prime minister of the <a href="https://en.wikipedia.org/wiki/Cape_Colony">Cape Colony</a>&#44; from whom the new 
-                                state was hoping for support&#46; However&#44; little was forthcoming&#46;<sup>
-                                <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-4" class="superscript">&#91;4&#93;</a></sup> 
-                                In 1886&#44; under the influence of the Boers returning to the <a href="https://en.wikipedia.org/wiki/South_African_Republic">
-                                Transvaal</a> from southern <a href="https://en.wikipedia.org/wiki/Angola">Angola</a>&#44; the name was changed from Upingtonia to 
-                                Lijdensrust or Lydensrust&#46;
-                                </div>
-
-                                <div class="paragraph-container">
-                                The short-lived republic's capital was Grootfontein&#44; and its 
-                                <a href="https://en.wikipedia.org/wiki/Head_of_state">head of state</a> was President 
-                                <a href="https://en.wikipedia.org/w/index.php?title=George_Diederik_P._Prinsloo&action=edit&redlink=1" 
-                                class="red-link">George Diederik P. Prinsloo</a>&#46; The new 
-                                state fought the Herero and became dependent on German protection&#46; 
-                                In 1886 Jordan was killed by <a href="https://en.wikipedia.org/wiki/Nehale_Mpingana">Nehale Mpingana</a>&#44; and the republic 
-                                collapsed&#46; The next year the area it had covered was incorporated 
-                                into German South-West Africa&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-5" 
-                                class="superscript">&#91;5&#93;</a></sup>
-                                </div>
-                            </div>
-                            <div class="sub-header-container"><span class="main-sub-headers">Notes</span> &#91; 
-                                <a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit&section=2" 
-                                class="edit-link">edit</a> &#93;
-                            </div>
-                            <div class="notes-links-container">
-                                <ol>
-                                    <li>
-                                        &#94; <sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-marais_1-0" 
-                                            class="superscript">a</a> 
-                                            <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-marais_1-1" class="superscript">b</a>
-                                            </sup> Chris Marais&#44; Julienne Du Toit&#44; <span class="italic-span">A Drink of Dry Land</span> 
-                                            &#40;2006&#41;&#44; p&#46; 174
-                                    </li>
-                                    <li>
-                                        <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-2">&#94;</a> Ute Dieckmann&#44; 
-                                        <span class="italic-span">Haillom in the Etosha Region&#58; A History of Colonial Settlement&#44; 
-                                        Ethnicity and Nature Conservation&#46; &#40;Basler Afrika Bibliographien&#44; 2007&#41;&#44; p&#46; 48</span>
-                                    </li>  
-                                    <li>
-                                        <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-3">&#94;</a> 
-                                        G&#46; P&#46; J&#46; Trümpelmann&#44; <span class="italic-span">Die Boer in Suid&#45;wes Afrika</span> &#40;1948&#41;
-                                    </li>
-                                    <li>
-                                        <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-4">&#94;</a> 
-                                        Robbie John MacVicar Aitken&#44; <span class="italic-span">Exclusion and Inclusion&#58; 
-                                            Gradations of Whiteness and Socio&#45;Economic Engineering in German Southwest Africa&#44; 1884&#45;1914</span> 
-                                            &#40;2007&#41;&#44; p&#46; 191
-                                    </li>
-                                    <li>
-                                        <a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-5">&#94;</a> Victor L&#46; Tonchi&#44; William A&#46; 
-                                        Lindeke&#44; John J&#46; Grotpeter&#44; <span class="italic-span">Historical Dictionary of Namibia</span> 
-                                        &#40;2012&#41;&#44; p&#46; 445
-                                    </li>
-                                </ol>
                             </div>
                         </div>
-                        <div>
-                            <div class="main-content-subcontainer2">
-                                <div class="article-info-container">
-                                    <div class="article-container1">
-                                        <div class="box-header">Republic of Lijdensrust</div>
-                                        <div class="box-header2">Republiek Lydensrust</div>
-                                    </div>
-                                    <div class="article-container1 duration-container">
-                                        <div>1885&ndash;1887</div>
-                                    </div>
-                                    <div class="article-container1">
-                                        <img src="icons/Flag_of_Germany_(1867–1918).svg.png" 
-                                        class="main-flag">
-                                        <div>Flag</div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div><span class="bold-span">Status</span></div>
-                                        </div>
-                                            <div class="right-side-align">
-                                                <div><a href="https://en.wikipedia.org/wiki/Boer_republic">Boer Republic</a></div>
-                                            </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div><span class="bold-span">Capital</span></div>
-                                        </div>
-                                            <div class="right-side-align">
-                                                <div><a href="https://en.wikipedia.org/wiki/Grootfontein">Grootfontein</a></div>
-                                            </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div><span class="bold-span">Common languages</span></div>
-                                        </div>    
-                                        <div class="right-side-align">
-                                            <div><a href="https://en.wikipedia.org/wiki/Dutch_language">Dutch</a> 
-                                                <span class="language-span">&#40;written&#41;</span></div>
-                                            <div><a href="https://en.wikipedia.org/wiki/Afrikaans">Afrikaans</a>
-                                                <span class="language-span"> &#40;spoken&#41;</span></div>
-                                            <div><a href="https://en.wikipedia.org/wiki/German_language">German</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div><span class="bold-span">Religion</span></div>
-                                        </div>
-                                        <div class="right-side-align">
-                                            <div>
-                                                <a href="https://en.wikipedia.org/wiki/Dutch_Reformed_Church">Dutch Reformed</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div>
-                                                <span class="bold-span">Government</span>
-                                            </div>
-                                            <div class="president-header">
-                                                <span class="bold-span">
-                                                    <a href="https://en.wiktionary.org/wiki/president">President</a>
-                                                </span>
-                                            </div>
-                                            <div class="article-info-sub-div">&#8226; 1885&ndash;1887</div>
-                                        </div>
-                                        <div class="right-side-align">
-                                            <div>
-                                                <a href="https://en.wikipedia.org/wiki/Republic">Republic</a>
-                                            </div>
-                                            <br>
-                                            <div class="president-name">
-                                            George
-                                            Diederik P&#46;
-                                            Prinsloo
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div class="article-sub-header">
-                                                <span class="bold-span">History</span>
-                                            </div>
-                                            <div class="article-info-sub-div">&#8226; 
-                                                <img src="icons/Flag_of_Germany_(1867–1918).svg (1).png" 
-                                                class="flag-icon1"> Founding of <br><span class="indent-second-line">Upingtonia</span>
-                                            </div>
-                                            <div class="article-info-sub-div">&#8226; Name change to<br>
-                                                <span class="indent-second-line">Lijdensrust</span>
-                                            </div>
-                                            <div class="article-info-sub-div">&#8226; 
-                                                <a href="https://en.wikipedia.org/wiki/William_Worthington_Jordan">William Worthington<br>
-                                                    <span class="indent-second-line">Jordan</a> killed by 
-                                                        <a href="https://en.wikipedia.org/wiki/Nehale_Mpingana">Nehale</span><br><span class="indent-second-line">Mpingana</a>
-                                                    </span>
-                                            </div>
-                                            <div class="article-info-sub-div">&#8226; Republic collapses</div>
-                                            <div class="article-info-sub-div">&#8226; 
-                                                <img src="icons/Flaggenentwurf_7_Südwestafrika_1914.svg.png" 
-                                                class="flag-icon1"><!--Perhaps silly but omitting the line space here as 
-                                                official Wiki page omitted space-->Merged into 
-                                                <a href="https://en.wikipedia.org/wiki/German_South-West_Africa">German<br><span class="indent-second-line">South-West Africa</a></span>
-                                            </div>
-                                        </div>
-                                        <div class="right-side-align">
-                                            <br>
-                                            <div class="right-align-sub-div first-line">October 20 1885</div>
-                                            <div class="right-align-sub-div">1886</div>
-                                            <br>
-                                            <div class="right-align-sub-div">1886</div>
-                                            <br><!--Understand that line break is probably not best practice,
-                                            but not sure exactly what else to do here to get the divs to line up-->
-                                            <br>
-                                            <div class="right-align-sub-div">1886</div>
-                                            <div class="right-align-sub-div">June 1887</div>
-                                        </div>
-                                    </div>
-                                    <div class="article-container2">
-                                        <div>
-                                            <div><span class="bold-span">Currency</span></div>
-                                        </div>
-                                        <div class="right-side-align">
-                                            <div><a href="https://en.wikipedia.org/wiki/Pound_sterling">Pound sterling</a> &#40;
-                                                <a href="https://en.wikipedia.org/wiki/%C2%A3">&#163;</a>&#41;
-                                            </div>
-                                        </div> 
-                                    </div>
-                                    <div class="article-container2 preceded-succeeded">
-                                        <div class="before-after-nationality">
-                                            <div class="sub-header precede-succeed">Preceded by</div>
-                                            <div>
-                                                <img src="icons/Flag_of_Ovamboland.svg.png" class="flag-icon2">
-                                                <div class="people-group">
-                                                    <a href="https://en.wikipedia.org/wiki/Ovambo_people">Ovambo people</a>
-                                                </div>
-                                            </div>
-                                        </div>    
-                                        <div class="before-after-nationality">
-                                            <div class="sub-header precede-succeed">Succeeded by</div>
-                                            <div>
-                                                <div class="people-group succeeded-by">
-                                                    <a href="https://en.wikipedia.org/wiki/German_South-West_Africa">German South-West Africa</a>
-                                                </div>
-                                                <img src="icons/Flaggenentwurf_7_Südwestafrika_1914.svg.png" class="flag-icon2">
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="container wiki-coordinates">
+                            <div class="source-footnote">From Wikipedia&#44; the free encyclopedia</div>
+                            <div class="coordinates-container">
+                                <a href="https://en.wikipedia.org/wiki/Geographic_coordinate_system" 
+                                class="coordinates">Coordinates&#58;</a>&nbsp;
+                                <a href=""><img src="icons/WMA_button2b.png.webp"></a>&nbsp; 
+                                <a href="https://geohack.toolforge.org/geohack.php?pagename=Upingtonia&params=19_34_S_18_7_E_type:country" 
+                                class="coordinates">19&deg;34&prime;S 18&deg;7&prime;E</a>
+                            </div>
+                        </div>
+                    </nav>
+					<div class="main-content-container">
+						<section class="main-content-subcontainer1">
+							<div>
+								<strong>Lijdensrust</strong>&#44; officially the 
+								<strong>Republic of Lijdensrust</strong>&#44; was a 
+								short&#45;lived 
+								<a href="https://en.wikipedia.org/wiki/Boer_Republics" class="boer-republic-link">Boer republic
+									<div class="tooltip">
+										<div class="tooltip-sub-container-left">
+											The <span class="bold-span">Boer republics</span> were independent&#44; self&#45;govering 
+											republics formed by Dutch&#45;speaking inhabitants of the Cape Colony and their descendants&#46;
+											The founders &mdash; variously named Trekboers&#44; Boers and Voortrekkers &mdash; settled mainly 
+											in the middle&#44; northern&#44; north&#45;<img src="icons/Cog,_Web_Fundamentals.svg" class="tooltip-cog">
+										</div>
+										<img src="icons/Boer_Republics_Flags.png" class="boer-republics-img">
+									</div>
+								</a> 
+								in the area of present&#45;day 
+								<a href="https://en.wikipedia.org/wiki/Namibia" class="namibia-link">Namibia
+									<div class="tooltip">
+										<img src="icons/Flag_of_Namibia.svg.png" class="namibia-img">
+										<div class="tooltip-sub-container-bottom">
+											<span class="bold-span">Namibia</span>&#44; officially the <span class="bold-span">Republic of Namibia</span>&#44;
+											is a country in Southern Africa&#46; Its western border is the Atlantic Ocean&#46;
+											It shares land borders with Zambia and Angola to the north&#44;
+											Botswana to the east and South Africa to the south and east&#46; Although
+											it does not border Zimbabwe&#44; less than 200 metres of the <img src="icons/Cog,_Web_Fundamentals.svg" 
+											class="tooltip-cog">
+										</div>
+									</div>
+								</a>&#46; 
+								Declared on <time datetime="1885-10-20">20 October 1885</time>&#44; it was originally named <strong>Upingtonia</strong>&#44; 
+								but changed its name soon after as the reason for its original 
+								name proved worthless&#46; In <time datetime="1887">1887</time>&#44; it was merged into 
+								<a href="https://en.wikipedia.org/wiki/German_South-West_Africa" class="german-swa-link">German South-West Africa
+									<div class="tooltip">
+										<img src="icons/Reichskolonialflagge.svg.png" class="german-swa-img">
+										<div class="tooltip-sub-container-bottom">
+											<span class="bold-span">German South West Africa</span> was a colony of
+											the German Empire from 1884 until 1915&#44;
+											though Germany did not officially recognise its 
+											loss of this territory until the 1919 Treaty of 
+											Versailles&#46;<img src="icons/Cog,_Web_Fundamentals.svg" class="tooltip-cog">
+										</div>
+									</div>
+								</a>&#46;
+							</div>
+							<h2 class="sub-header-container"><span class="main-sub-headers">History</span> &#91; 
+								<a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit&section=1" 
+								class="edit-link">edit</a> &#93;
+							</h2>
+							<div>
+								<p class="paragraph-container">
+								Between the years <time datetime="1874">1874</time> and <time datetime="1880">1880</time>&#44; farmers migrated from the 
+								<a href="https://en.wikipedia.org/wiki/South_African_Republic">Transvaal</a> to what was then southern 
+								<a href="https://en.wikipedia.org/wiki/Angola">Angola</a>. There&#44; they came 
+								into conflict with the Portuguese colonial authorities&#44; and some 
+								of their number decided to return to the Transvaal&#44; while others 
+								migrated further south&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-marais-1" 
+								class="superscript">&#91;1&#93;</a></sup>
+								</p>
 
-                                    <div class="article-container2">
-                                        <div>
-                                            <div>
-                                                <span class="bold-span">Today part of</span>
-                                            </div>
-                                        </div>
-                                        <div class="right-side-align">
-                                            <div>
-                                                <a href="https://en.wikipedia.org/wiki/Namibia">Namibia</a>
-                                            </div>
-                                        </div>   
-                                    </div>
+								<p class="paragraph-container">
+								In <time datetime="1885">1885</time>&#44; <a href="https://en.wikipedia.org/wiki/William_Worthington_Jordan">William Worthington Jordan</a> 
+								bought a tract &#40;fifty thousand square kilometers&#41; of land from the <a 
+								href="https://en.wikipedia.org/wiki/Ovambo_people">Ovambo</a> chief Kambonde for three hundred 
+								<a href="https://en.wikipedia.org/wiki/Pound_sterling">
+								pounds</a>&#44; paid as twenty-five firearms&#44; one salted horse&#44; and a cask of brandy&#46;<sup><a 
+								href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-2" class="superscript">&#91;2&#93;</a></sup>
+								This land stretched almost 170 kilometres &#40;110 mi&#41; 
+								from <a href="https://en.wikipedia.org/wiki/Okaukuejo">Okaukuejo</a> in the west to <a 
+								href="https://en.wikipedia.org/w/index.php?title=Fischer%27s_Pan&action=edit&redlink=1" class="red-link">Fischer's Pan</a> 
+								in the east&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-3" class="superscript">&#91;3&#93;</a></sup> 
+								Chief Kambonde relied on the help of Jordan to defeat his rival for power&#44; Nehale&#46;
+								</p>
 
-                                </div>
-                                    
-                            </div>
-                            <div class="map-container">
-                                <a href="https://en.wikipedia.org/wiki/File:Rep_Upingtonia_1886.jpg">
-                                    <img src="icons/Rep_Upingtonia_1886.jpg" class="map-photo">
-                                </a>
-                                <div class="map-text">
-                                    <div>Map showing Lijdensrust edged grey</div>
-                                    <a href="https://en.wikipedia.org/wiki/File:Rep_Upingtonia_1886.jpg">
-                                        <img src="icons/magnify-clip-ltr.svg">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="main-content-bottom-container1">
-                        <div class="main-content-bottom-container1-inner">
-                            <div class="flexbox-bottom-links">
-                                <div class="bottom-links-left">
-                                    <a href="https://en.wikipedia.org/wiki/Template:South_African_Governments">V</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Template_talk:South_African_Governments">T</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:South_African_Governments">E</a>
-                                </div>
-                                <div class="bottom-links-header">Other South African governments</div>
-                                <div class="bottom-links-right">
-                                    &#91;<a href="">show</a>&#93;
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="main-content-bottom-container1-inner">
-                            <div class="flexbox-bottom-links">
-                                <div class="bottom-links-left">
-                                    <a href="https://en.wikipedia.org/wiki/Template:Boer_republics">V</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Template_talk:Boer_republics">T</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:Boer_republics">E</a>
-                                </div>
-                                <div class="bottom-links-header">
-                                    <a href="https://en.wikipedia.org/wiki/Boer_republics">Boer republics</a>
-                                </div>
-                                <div class="bottom-links-right">
-                                    &#91;<a href="">show</a>&#93;
-                                </div>
-                            </div>
-                        </div>    
-                        <div class="main-content-bottom-container1-inner">
-                            <div class="flexbox-bottom-links">
-                                <div class="bottom-links-left"><a href="https://en.wikipedia.org/wiki/Template:Political_history_of_South_Africa">V</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Template_talk:Political_history_of_South_Africa">T</a> 
-                                    <b>&#183;</b> 
-                                    <a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:Political_history_of_South_Africa">E</a>
-                                </div>
-                                <div class="bottom-links-header">Political history of 
-                                    <a href="https://en.wikipedia.org/wiki/South_Africa">South Africa</a>
-                                </div>
-                                <div class="bottom-links-right">
-                                    &#91;<a href="">show</a>&#93;
-                                </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div class="main-content-bottom-container2">
-                        <a href="https://en.wikipedia.org/wiki/Help:Category">
-                            Categories&#58;  
-                        </a>
+								<p class="paragraph-container">
+								Between <time datetime="1876">1876</time> and <time datetime="1879">1879</time>&#44; at the time of the <a href="https://en.wikipedia.org/wiki/Dorsland_Trek">
+								Dorsland Trek</a>&#44; Boers had crossed the area&#44; heading for Angola&#46; In <time datetime="1885">1885</time> some of these trekkers 
+								returned and settled at <a href="https://en.wikipedia.org/wiki/Grootfontein">Grootfontein</a> on land given to them free of 
+								charge by Jordan&#46; The Republic of Upingtonia was declared on <time datetime="1885-10-20">20 
+								October 1885</time>&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-marais-1" class="superscript">&#91;1&#93;
+								</a></sup> At that time&#44; the population of Upingtonia was 
+								around five hundred settlers&#46; The state was named after <a href="https://en.wikipedia.org/wiki/Thomas_Upington">Thomas 
+								Upington</a>&#44; prime minister of the <a href="https://en.wikipedia.org/wiki/Cape_Colony">Cape Colony</a>&#44; from whom the new 
+								state was hoping for support&#46; However&#44; little was forthcoming&#46;<sup>
+								<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-4" class="superscript">&#91;4&#93;</a></sup> 
+								In <time datetime="1886">1886</time>&#44; under the influence of the Boers returning to the <a href="https://en.wikipedia.org/wiki/South_African_Republic">
+								Transvaal</a> from southern <a href="https://en.wikipedia.org/wiki/Angola">Angola</a>&#44; the name was changed from Upingtonia to 
+								Lijdensrust or Lydensrust&#46;
+								</p>
+
+								<p class="paragraph-container">
+								The short-lived republic's capital was Grootfontein&#44; and its 
+								<a href="https://en.wikipedia.org/wiki/Head_of_state">head of state</a> was President 
+								<a href="https://en.wikipedia.org/w/index.php?title=George_Diederik_P._Prinsloo&action=edit&redlink=1" 
+								class="red-link">George Diederik P. Prinsloo</a>&#46; The new 
+								state fought the Herero and became dependent on German protection&#46; 
+								In <time datetime="1886">1886</time> Jordan was killed by <a href="https://en.wikipedia.org/wiki/Nehale_Mpingana">Nehale Mpingana</a>&#44; and the republic 
+								collapsed&#46; The next year the area it had covered was incorporated 
+								into German South-West Africa&#46;<sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_note-5" 
+								class="superscript">&#91;5&#93;</a></sup>
+								</p>
+							</div>
+							<h2 class="sub-header-container"><span class="main-sub-headers">Notes</span> &#91; 
+								<a href="https://en.wikipedia.org/w/index.php?title=Upingtonia&action=edit&section=2" 
+								class="edit-link">edit</a> &#93;
+							</h2>
+							<div class="notes-links-container">
+								<ol>
+									<li>
+										&#94; <sup><a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-marais_1-0" 
+											class="superscript">a</a> 
+											<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-marais_1-1" class="superscript">b</a>
+											</sup> Chris Marais&#44; Julienne Du Toit&#44; <span class="italic-span">A Drink of Dry Land</span> 
+											&#40;2006&#41;&#44; p&#46; 174
+									</li>
+									<li>
+										<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-2">&#94;</a> Ute Dieckmann&#44; 
+										<span class="italic-span">Haillom in the Etosha Region&#58; A History of Colonial Settlement&#44; 
+										Ethnicity and Nature Conservation&#46; &#40;Basler Afrika Bibliographien&#44; 2007&#41;&#44; p&#46; 48</span>
+									</li>  
+									<li>
+										<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-3">&#94;</a> 
+										G&#46; P&#46; J&#46; Trümpelmann&#44; <span class="italic-span">Die Boer in Suid&#45;wes Afrika</span> &#40;1948&#41;
+									</li>
+									<li>
+										<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-4">&#94;</a> 
+										Robbie John MacVicar Aitken&#44; <span class="italic-span">Exclusion and Inclusion&#58; 
+											Gradations of Whiteness and Socio&#45;Economic Engineering in German Southwest Africa&#44; 1884&#45;1914</span> 
+											&#40;2007&#41;&#44; p&#46; 191
+									</li>
+									<li>
+										<a href="https://en.wikipedia.org/wiki/Upingtonia#cite_ref-5">&#94;</a> Victor L&#46; Tonchi&#44; William A&#46; 
+										Lindeke&#44; John J&#46; Grotpeter&#44; <span class="italic-span">Historical Dictionary of Namibia</span> 
+										&#40;2012&#41;&#44; p&#46; 445
+									</li>
+								</ol>
+							</div>
+						</section>
+						<section>
+							<div class="main-content-subcontainer2">
+								<div class="article-info-container">
+									<div class="article-container1">
+										<div class="box-header">
+											<h2>
+												<strong>Republic of Lijdensrust</strong>
+											</h2>
+										</div>
+										<div class="box-header2">Republiek Lydensrust</div>
+									</div>
+									<div class="article-container1 duration-container">
+										<div>1885&ndash;1887</div>
+									</div>
+									<div class="article-container1">
+										<img src="icons/Flag_of_Germany_(1867–1918).svg.png" 
+										class="main-flag">
+										<div>Flag</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div><span class="bold-span">Status</span></div>
+										</div>
+											<div class="right-side-align">
+												<div><a href="https://en.wikipedia.org/wiki/Boer_republic">Boer Republic</a></div>
+											</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div><span class="bold-span">Capital</span></div>
+										</div>
+											<div class="right-side-align">
+												<div><a href="https://en.wikipedia.org/wiki/Grootfontein">Grootfontein</a></div>
+											</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div><span class="bold-span">Common languages</span></div>
+										</div>    
+										<div class="right-side-align">
+											<div><a href="https://en.wikipedia.org/wiki/Dutch_language">Dutch</a> 
+												<span class="language-span">&#40;written&#41;</span></div>
+											<div><a href="https://en.wikipedia.org/wiki/Afrikaans">Afrikaans</a>
+												<span class="language-span"> &#40;spoken&#41;</span></div>
+											<div><a href="https://en.wikipedia.org/wiki/German_language">German</a></div>
+										</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div><span class="bold-span">Religion</span></div>
+										</div>
+										<div class="right-side-align">
+											<div>
+												<a href="https://en.wikipedia.org/wiki/Dutch_Reformed_Church">Dutch Reformed</a>
+											</div>
+										</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div>
+												<span class="bold-span">Government</span>
+											</div>
+											<div class="president-header">
+												<span class="bold-span">
+													<a href="https://en.wiktionary.org/wiki/president">President</a>
+												</span>
+											</div>
+											<div class="article-info-sub-div">&#8226; 1885&ndash;1887</div>
+										</div>
+										<div class="right-side-align">
+											<div>
+												<a href="https://en.wikipedia.org/wiki/Republic">Republic</a>
+											</div>
+											<br>
+											<div class="president-name">
+											George
+											Diederik P&#46;
+											Prinsloo
+											</div>
+										</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div class="article-sub-header">
+												<span class="bold-span">History</span>
+											</div>
+											<div class="article-info-sub-div">&#8226; 
+												<img src="icons/Flag_of_Germany_(1867–1918).svg (1).png" 
+												class="flag-icon1"> Founding of <br><span class="indent-second-line">Upingtonia</span>
+											</div>
+											<div class="article-info-sub-div">&#8226; Name change to<br>
+												<span class="indent-second-line">Lijdensrust</span>
+											</div>
+											<div class="article-info-sub-div">&#8226; 
+												<a href="https://en.wikipedia.org/wiki/William_Worthington_Jordan">William Worthington<br>
+													<span class="indent-second-line">Jordan</a> killed by 
+														<a href="https://en.wikipedia.org/wiki/Nehale_Mpingana">Nehale</span><br><span class="indent-second-line">Mpingana</a>
+													</span>
+											</div>
+											<div class="article-info-sub-div">&#8226; Republic collapses</div>
+											<div class="article-info-sub-div">&#8226; 
+												<img src="icons/Flaggenentwurf_7_Südwestafrika_1914.svg.png" 
+												class="flag-icon1">Merged into 
+												<a href="https://en.wikipedia.org/wiki/German_South-West_Africa">German<br><span class="indent-second-line">South-West Africa</a></span>
+											</div>
+										</div>
+										<div class="right-side-align">
+											<br>
+											<div class="right-align-sub-div first-line">October 20 1885</div>
+											<div class="right-align-sub-div">1886</div>
+											<br>
+											<div class="right-align-sub-div">1886</div>
+											<br>
+											<br>
+											<div class="right-align-sub-div">1886</div>
+											<div class="right-align-sub-div">June 1887</div>
+										</div>
+									</div>
+									<div class="article-container2">
+										<div>
+											<div><span class="bold-span">Currency</span></div>
+										</div>
+										<div class="right-side-align">
+											<div><a href="https://en.wikipedia.org/wiki/Pound_sterling">Pound sterling</a> &#40;
+												<a href="https://en.wikipedia.org/wiki/%C2%A3">&#163;</a>&#41;
+											</div>
+										</div> 
+									</div>
+									<div class="article-container2 preceded-succeeded">
+										<div class="before-after-nationality">
+											<div class="sub-header precede-succeed">Preceded by</div>
+											<div>
+												<img src="icons/Flag_of_Ovamboland.svg.png" class="flag-icon2">
+												<div class="people-group">
+													<a href="https://en.wikipedia.org/wiki/Ovambo_people">Ovambo people</a>
+												</div>
+											</div>
+										</div>    
+										<div class="before-after-nationality">
+											<div class="sub-header precede-succeed">Succeeded by</div>
+											<div>
+												<div class="people-group succeeded-by">
+													<a href="https://en.wikipedia.org/wiki/German_South-West_Africa">German South-West Africa</a>
+												</div>
+												<img src="icons/Flaggenentwurf_7_Südwestafrika_1914.svg.png" class="flag-icon2">
+											</div>
+										</div>
+									</div>
+
+									<div class="article-container2">
+										<div>
+											<div>
+												<span class="bold-span">Today part of</span>
+											</div>
+										</div>
+										<div class="right-side-align">
+											<div>
+												<a href="https://en.wikipedia.org/wiki/Namibia">Namibia</a>
+											</div>
+										</div>   
+									</div>
+
+								</div>
+									
+							</div>
+							<div class="map-container">
+								<a href="https://en.wikipedia.org/wiki/File:Rep_Upingtonia_1886.jpg">
+									<img src="icons/Rep_Upingtonia_1886.jpg" class="map-photo">
+								</a>
+								<div class="map-text">
+									<div>Map showing Lijdensrust edged grey</div>
+									<a href="https://en.wikipedia.org/wiki/File:Rep_Upingtonia_1886.jpg">
+										<img src="icons/magnify-clip-ltr.svg">
+									</a>
+								</div>
+							</div>
+						</section>    
+					</div>
+					<section>
+						<div class="main-content-bottom-container1">
+							<div class="main-content-bottom-container1-inner">
+								<div class="flexbox-bottom-links">
+									<div class="bottom-links-left">
+										<a href="https://en.wikipedia.org/wiki/Template:South_African_Governments">V</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Template_talk:South_African_Governments">T</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:South_African_Governments">E</a>
+									</div>
+									<div class="bottom-links-header">Other South African governments</div>
+									<div class="bottom-links-right">
+										&#91;<a href="">show</a>&#93;
+									</div>
+								</div>
+							</div>    
+							<div class="main-content-bottom-container1-inner">
+								<div class="flexbox-bottom-links">
+									<div class="bottom-links-left">
+										<a href="https://en.wikipedia.org/wiki/Template:Boer_republics">V</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Template_talk:Boer_republics">T</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:Boer_republics">E</a>
+									</div>
+									<div class="bottom-links-header">
+										<a href="https://en.wikipedia.org/wiki/Boer_republics">Boer republics</a>
+									</div>
+									<div class="bottom-links-right">
+										&#91;<a href="">show</a>&#93;
+									</div>
+								</div>
+							</div>    
+							<div class="main-content-bottom-container1-inner">
+								<div class="flexbox-bottom-links">
+									<div class="bottom-links-left"><a href="https://en.wikipedia.org/wiki/Template:Political_history_of_South_Africa">V</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Template_talk:Political_history_of_South_Africa">T</a> 
+										<b>&#183;</b> 
+										<a href="https://en.wikipedia.org/wiki/Special:EditPage/Template:Political_history_of_South_Africa">E</a>
+									</div>
+									<div class="bottom-links-header">Political history of 
+										<a href="https://en.wikipedia.org/wiki/South_Africa">South Africa</a>
+									</div>
+									<div class="bottom-links-right">
+										&#91;<a href="">show</a>&#93;
+									</div>
+								</div>
+							</div>    
+						</div>
+						<div class="main-content-bottom-container2">
+							<a href="https://en.wikipedia.org/wiki/Help:Category">
+								Categories&#58;  
+							</a>
+							<ul>
+								<a href="https://en.wikipedia.org/wiki/Category:Otjozondjupa_Region">
+									<li class="first-list-item">Otjozondjupa Region</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:Boer_Republics">
+									<li class="list-item-border">Boer Replublics</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:Former_republics">
+									<li class="list-item-border">Former republics</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:Former_countries_in_Africa">
+									<li class="list-item-border">Former countries in Africa</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:States_and_territories_established_in_1885">
+									<li class="list-item-border">States and territories established in 1885</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:1885_establishments_in_Africa">
+									<li class="list-item-border">1885 establishments in Africa</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:States_and_territories_disestablished_in_1887">
+									<li class="list-item-border">States and territories disestablished in 1887</li>
+								</a>
+								<a href="https://en.wikipedia.org/wiki/Category:1887_disestablishments_in_Africa">
+									<li class="list-item-border">1887 disestablishments in Africa</li>
+								</a>
+							</ul>
+						</div>
+					</section>
+                </main>
+                <footer>
+                    <nav class="footer-top-container" aria-label="Footer primary links">
+                        <small>This page was last edited on 28 May 2023&#44; at 16&#58;03 &#40;UTC&#41;&#46;</small>
+                        <small>
+							Text is available under the 
+                            <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">
+                            Creative Commons Attribution&dash;ShareAlike License 4&#46;0</a>&#59; 
+                            additional terms may apply&#46; By using this site&#44; you agree to the <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use">
+                            Terms of Use</a> and 
+                            <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>&#46; Wikipedia&reg; is a registered trademark of the 
+                            <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation&#44; Inc&#46;</a>&#44; 
+                            a non-profit organization&#46;
+                        </small>
+                    </nav>
+                    <nav class="wiki-bottom-links" aria-label="Footer similar topics links">
                         <ul>
-                            <a href="https://en.wikipedia.org/wiki/Category:Otjozondjupa_Region">
-                                <li class="first-list-item">Otjozondjupa Region</li>
+                            <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
+                                <li>Privacy policy</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:Boer_Republics">
-                                <li class="list-item-border">Boer Replublics</li>
+                            <a href="https://en.wikipedia.org/wiki/Wikipedia:About">
+                                <li>About Wikipedia</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:Former_republics">
-                                <li class="list-item-border">Former republics</li>
+                            <a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">
+                                <li>Disclaimers</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:Former_countries_in_Africa">
-                                <li class="list-item-border">Former countries in Africa</li>
+                            <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">
+                                <li>Contact Wikipedia</li>
+                            </a>    
+                            <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">
+                                <li>Code of Conduct</li>
+                            </a>    
+                            <a href="https://developer.wikimedia.org/">
+                                <li>Developers</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:States_and_territories_established_in_1885">
-                                <li class="list-item-border">States and territories established in 1885</li>
+                            <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
+                                <li>Statistics</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:1885_establishments_in_Africa">
-                                <li class="list-item-border">1885 establishments in Africa</li>
+                            <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
+                                <li>Cookie statement</li>
                             </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:States_and_territories_disestablished_in_1887">
-                                <li class="list-item-border">States and territories disestablished in 1887</li>
-                            </a>
-                            <a href="https://en.wikipedia.org/wiki/Category:1887_disestablishments_in_Africa">
-                                <li class="list-item-border">1887 disestablishments in Africa</li>
+                            <a href="https://en.m.wikipedia.org/w/index.php?title=Upingtonia&mobileaction=toggle_view_mobile">
+                                <li>Mobile view</li>
                             </a>
                         </ul>
-                    </div>
-                </section>
-            </main>
-            <footer>
-                <div class="footer-top-container">
-                    <div>This page was last edited on 28 May 2023&#44; at 16&#58;03 &#40;UTC&#41;&#46;</div>
-                    <div>Text is available under the 
-                        <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License">
-                        Creative Commons Attribution&dash;ShareAlike License 4&#46;0</a>&#59; 
-                        additional terms may apply&#46; By using this site&#44; you agree to the <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use">
-                        Terms of Use</a> and 
-                        <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>&#46; Wikipedia&reg; is a registered trademark of the 
-                        <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation&#44; Inc&#46;</a>&#44; 
-                        a non-profit organization&#46;
-                    </div>
-                </div>
-                <div class="wiki-bottom-links">
-                    <ul>
-                        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">
-                            <li>Privacy policy</li>
+                    </nav>
+                    <nav class="wiki-bottom-buttons-container" aria-label="General Wikipedia links">
+                        <a href="https://wikimediafoundation.org/">
+                            <img src="icons/wikimedia-button-1.5x.png" class="wiki-bottom-buttons">
                         </a>
-                        <a href="https://en.wikipedia.org/wiki/Wikipedia:About">
-                            <li>About Wikipedia</li>
+                        <a href="https://www.mediawiki.org/">
+                            <img src="icons/poweredby_mediawiki_132x47.png" class="wiki-bottom-buttons">
                         </a>
-                        <a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">
-                            <li>Disclaimers</li>
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">
-                            <li>Contact Wikipedia</li>
-                        </a>    
-                        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">
-                            <li>Code of Conduct</li>
-                        </a>    
-                        <a href="https://developer.wikimedia.org/">
-                            <li>Developers</li>
-                        </a>
-                        <a href="https://stats.wikimedia.org/#/en.wikipedia.org">
-                            <li>Statistics</li>
-                        </a>
-                        <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">
-                            <li>Cookie statement</li>
-                        </a>
-                        <a href="https://en.m.wikipedia.org/w/index.php?title=Upingtonia&mobileaction=toggle_view_mobile">
-                            <li>Mobile view</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="wiki-bottom-buttons-container">
-                    <a href="https://wikimediafoundation.org/">
-                        <img src="icons/wikimedia-button-1.5x.png" class="wiki-bottom-buttons">
-                    </a>
-                    <a href="https://www.mediawiki.org/">
-                        <img src="icons/poweredby_mediawiki_132x47.png" class="wiki-bottom-buttons">
-                    </a>
-                </div>    
-            </footer>
+                    </nav>    
+                </footer>
+            </div>
         </div>
     </body>
 </html>

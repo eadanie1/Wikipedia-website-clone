@@ -1,15 +1,16 @@
-/*GENERAL*/
-
 body{
     margin: 0;
     background-color: rgb(248, 249, 250);
     font-family: sans-serif;
     font-size: 14px;
     color: rgb(32,33,34);
-    display: flex; /*Not sure if this is an approved method, but couldn't think of
-    other way to get around centering the main div with the body padding/background 
-    color per the actual Wiki site*/
-    justify-content: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .content-body{
@@ -30,6 +31,11 @@ a:hover{
 
 button{
     cursor: pointer;
+}
+
+small {
+    display: block;
+    margin: 18px 0;
 }
 
 
@@ -266,6 +272,11 @@ button{
 
 
 /*MAIN CONTENT*/
+
+#main-flexbox-container {
+    display: flex;
+    justify-content: center;
+}
 
 .main-container{
     padding: 0 107px 0 336px;
@@ -565,10 +576,6 @@ button{
 
 .paragraph-container{
     margin: 0 0 7px 0;
-}
-
-.bold-span{
-    font-weight: 700;
 }
 
 .italic-span{
