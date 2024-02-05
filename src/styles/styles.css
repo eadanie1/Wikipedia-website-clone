@@ -325,8 +325,6 @@ small {
 
 .article-title{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /*Could not source Linux Libertine as
-    unavailable on Google Fonts*/
     font-size: 28.8px;
     font-weight: 400;
     margin: 0;
@@ -431,8 +429,7 @@ small {
     position: relative;
 }
 
-.boer-republic-link .tooltip{/*Only made these three first tooltips as it would
-    mostly be copy and paste for the rest*/
+.boer-republic-link .tooltip{
     position: absolute;
     display: flex;
     border-radius: 2px;
@@ -634,6 +631,14 @@ sup{
     align-items: center;
     border-bottom: 1px solid rgb(162,169,177);
     padding: 6.2px 0;
+    font-size: 12.4px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
 }
 
 .duration-container{
@@ -646,6 +651,7 @@ sup{
     align-items: start;
     border-bottom: 1px solid rgb(162,169,177);
     padding: 4.94px 7.4px;
+    font-size: 12.4px;
 }
 
 .language-span{
@@ -745,6 +751,10 @@ sup{
     justify-content: space-between;
     font-size: 12.3px;
     padding: 0 3px 3px 3px;
+}
+
+.map-text figcaption {
+    text-align: left;
 }
 
 .map-text div{
