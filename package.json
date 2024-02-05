@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "name": "wikipedia-website-clone",
   "version": "1.0.0",
   "description": "Here you'll find my Wikipedia website clone project, using HTML and CSS.",
@@ -8,5 +9,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  }
 }
