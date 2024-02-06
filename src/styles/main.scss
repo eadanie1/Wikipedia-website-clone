@@ -1,0 +1,1008 @@
+// This is the devbranch SCSS file.. now main
+
+body{
+  margin: 0;
+  background-color: rgb(248, 249, 250);
+  font-family: sans-serif;
+  font-size: 14px;
+  color: rgb(32,33,34);
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.content-body{
+  background-color: white;
+  max-width: 1600px;
+  position: relative;
+}
+
+a{
+  color: rgb(51,102,204);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button{
+  cursor: pointer;
+}
+
+small {
+  display: block;
+  margin: 18px 0;
+}
+
+
+
+/*HEADER*/
+
+.header{
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  column-gap: 36px;
+  padding: 8px 46px 0px 46px;
+  margin-bottom: 39px;
+  height: 50px;
+}
+
+.header-left-section{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.header-hamburger-menu{
+  height: 20px;
+  padding: 6px;
+  margin-right: 14px;
+  transition: background-color 0.15s;
+}
+
+.header-hamburger-menu:hover{
+  background-color: #f8f9fa;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header-hamburger-menu:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);    
+  padding: 5px;
+  margin-right: 14.5px;
+}
+
+.wiki-container{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wikipedia-globe-icon{
+  height: 50px;
+  margin-right: 10px;
+}
+
+.wikipedia-logos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wikipedia-wordmark-icon{
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+.wikipedia-tagline-icon{
+  width: 117px;
+}
+
+.header-right-grid-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-middle-section{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 476.5px;
+  margin-right: 12px;
+}
+
+.search-bar{/*Unsure how to place the search icon
+  inside the placeholder, so only making it visible 
+  once it's shown on its own @<1000px browser window size*/
+  padding: 7px;
+  flex: 1;
+  height: 32px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border:1px solid rgb(162, 169, 177);
+}
+
+.search-button{
+  background-color: rgb(248, 249, 250);
+  border:1px solid rgb(162, 169, 177);
+  height: 32px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 11px;
+  overflow: hidden;
+  transition: background-color 0.15s;
+}
+
+.search-button:hover{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(255, 255, 255);    
+}
+
+.search-button:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);    
+}
+
+.header-right-section{
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.search-icon{
+  height: 20px;
+  padding: 6px;
+  margin-right: 12px;
+  transition: background-color 0.15s;
+}
+
+.search-icon:hover{
+  background-color: #f8f9fa;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-icon:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);    
+  padding: 5.5px;
+  margin-right: 13.5px;
+}
+
+.login-link{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.ellipsis-icon{
+  height: 20px;
+  padding: 6px;
+  transition: background-color 0.15s;
+}
+
+.ellipsis-icon:hover{
+  background-color: rgb(248, 249, 250);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ellipsis-icon:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);    
+  padding: 5px;
+  margin-left: 0.5px;
+}
+
+
+
+/*SIDEBAR*/
+
+.sidebar{/*Unsure how to make the scroll effect, started out making it a position 
+  fixed element, but then didn't work with smaller browser window sizes etc;*/
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 147px;
+  left: 0;
+  bottom: 295px;
+  width: 234px;
+  padding: 0 52px 0 52px;
+  z-index: 100;
+}
+
+.sidebar-hide-link{
+  font-size: 13.3px;
+}
+
+.sidebar-hide-link:hover{
+  text-decoration: none;
+}
+
+.sidebar-heading{
+  border-bottom: 1px solid rgb(234, 234, 234);
+  color: rgb(84,89,93);
+  padding-bottom: 7px;
+}
+
+.sidebar-link-top{
+  padding-top: 6px;
+  color:rgb(32,33,34);
+}
+
+.sidebar-links{
+  padding-bottom: 12px;
+}
+
+.fixed-pos-fullscreen-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  padding: 5.4px;
+  background-color: rgb(248,249,250);
+  border: 0.75px solid rgb(162, 169, 177);
+  border-radius: 2px;
+  transition: background-color 0.15s;
+}
+
+.fixed-pos-fullscreen-button:hover{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(255, 255, 255);   
+}
+
+.fixed-pos-fullscreen-button:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);  
+}
+
+
+
+/*MAIN CONTENT*/
+
+#main-flexbox-container {
+  display: flex;
+  justify-content: center;
+}
+
+.main-container{
+  padding: 0 107px 0 336px;
+  max-width: 970px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-container{
+  border-bottom: 1px solid rgb(162, 169, 177);
+}
+
+.list-bullet-menu{
+  height: 20px;
+  padding: 6px;
+  margin:0 14px -6px -6px;
+  transition: background-color 0.15s;
+}
+
+.list-bullet-menu:hover{
+  background-color: rgb(248, 249, 250);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.list-bullet-menu:active{
+  border:1px solid rgb(162, 169, 177);
+  background-color: rgb(232, 231, 231);    
+  padding: 5px;
+  margin-right: 14.5px;
+}
+
+.tool-bar{
+  border-bottom: 1px solid rgb(200,204,209);
+  padding: 9px 0;
+  margin-bottom: 7px;
+}
+
+.wiki-coordinates{
+  margin-bottom: 19.5px;
+}
+
+.article-title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 28.8px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.language-dropdown{
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  margin-right: -11px;
+  margin-bottom: 4px;
+  transition: background-color 0.15s;
+}
+
+.language-dropdown:hover{
+  background-color: rgb(225, 242, 255);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.language-link,
+.language-link:hover{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.language-link{
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.article-links1{
+  font-size: 13px;
+  padding-right: 12px;
+}
+
+.article-links2{
+  font-size: 13px;
+  padding-right: 16px;
+}
+
+.red-link{
+  color: rgb(215,51,51);
+}
+
+.tool-bar-right{
+  display: flex;
+}
+
+.tools-dropdown{
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  padding: 9px 0;
+  margin: -9px 0;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.tools-dropdown:hover{
+  background-color: rgb(248, 249, 250);    
+}
+
+.tools-link{
+  font-size: 13px;
+  color: black;
+  padding-right: 4px;
+}
+
+.tools-link:hover{
+  text-decoration: none;
+}
+
+.source-footnote{
+  font-size: 12.8px;
+}
+
+.coordinates-container{
+  display: flex;
+}
+
+.coordinates{
+  font-size: 12px;
+}
+
+.main-content-container{
+  display: flex;
+}
+
+.main-content-subcontainer1{
+  flex: 1;
+  padding-right: 12.32px;
+  line-height: 22.4px;
+}
+
+.main-content-subcontainer2{
+  width: 271px;
+  font-size: 12.4px;
+}
+
+.boer-republic-link{
+  position: relative;
+}
+
+.boer-republic-link .tooltip{
+  position: absolute;
+  display: flex;
+  border-radius: 2px;
+  height: 250px;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+  pointer-events: none;
+  transition: opacity 0.15s;
+  right: 0;
+  z-index: 300;
+}
+
+.boer-republic-link:hover .tooltip{
+  opacity: 1;
+}
+
+.tooltip-sub-container-left{
+  background-color: white;
+  padding: 16px;
+  width: 214px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: black;
+}
+
+.boer-republics-img{
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.boer-republic-link .tooltip-cog{
+  width: 15px;
+  margin-bottom: -15px;
+  margin-left: 20px;
+}
+
+.namibia-link{
+  position: relative;
+}
+
+.namibia-link .tooltip{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  width: 315px;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+  pointer-events: none;
+  transition: opacity 0.15s;
+  left: 0;
+  z-index: 300;
+}
+
+.namibia-link:hover .tooltip{
+  opacity: 1;
+}
+
+.tooltip-sub-container-bottom{
+  background-color: white;
+  height: 180px;
+  padding: 16px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: black;
+}
+
+.namibia-img{
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.namibia-link .tooltip-cog{
+  width: 15px;
+  margin-bottom: -25px;
+  margin-left: 10px;
+}
+
+.german-swa-link{
+  position: relative;
+}
+
+.german-swa-link .tooltip{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  width: 318px;
+  opacity: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+  pointer-events: none;
+  transition: opacity 0.15s;
+  right: -50px;
+  top: 20px;
+  z-index: 300;
+}
+
+.german-swa-link:hover .tooltip{
+  opacity: 1;
+}
+
+.tooltip-sub-container-bottom{
+  background-color: white;
+  height: 180px;
+  padding: 16px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  color: black;
+}
+
+.german-swa-img{
+  height: 190px;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.german-swa-link .tooltip-cog{
+  width: 15px;
+  margin-bottom: -65px;
+  margin-left: 190px;
+}
+
+.sub-header-container{
+  margin: 24px 0 6px 0;
+  border-bottom: 1px solid rgb(162, 169, 177);
+}
+
+.main-sub-headers{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 21px;
+  margin-right: 8px;
+}
+
+.paragraph-container{
+  margin: 0 0 7px 0;
+}
+
+.italic-span{
+  font-style: italic;
+}
+
+sup{
+  line-height: 0;
+}
+
+.superscript{
+  font-size: 11px;
+}
+
+.notes-links-container{
+  font-size: 12.6px;
+  line-height: 21px;
+}
+
+.notes-links-container a{
+  font-weight: 700;
+  font-style: italic;
+}
+
+.notes-links-container ol{
+  list-style-type: decimal;
+  margin: 0;
+}
+
+.article-info-container{
+  border-left: 1px solid rgb(162,169,177);
+  border-right: 1px solid rgb(162,169,177);
+  border-top: 1px solid rgb(162,169,177);
+  background-color: rgb(248, 249, 250);
+}
+
+.main-flag{
+  height: 83px;
+  margin-bottom: 4px;
+}
+
+.box-header{
+  font-size: 15.4px;
+  font-weight: 700;
+}
+
+.box-header2{
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 7px;
+}
+
+.article-container1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid rgb(162,169,177);
+  padding: 6.2px 0;
+  font-size: 12.4px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2px;
+}
+
+.duration-container{
+  padding: 5px 0;
+}
+
+.article-container2{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid rgb(162,169,177);
+  padding: 4.94px 7.4px;
+  font-size: 12.4px;
+}
+
+.language-span{
+  font-size: 10.5px;
+}
+
+.president-header{
+  margin-top: 5.5px;
+  margin-bottom: 5px;
+}
+
+.president-name{
+  margin-top: 10.5px;
+}
+
+.right-side-align{
+  width: 84.5px;
+}
+
+.right-align-sub-div{
+  margin-top: 2.5px;
+}
+
+.first-line{
+  margin-top: 7.5px;
+}
+
+.article-sub-header{
+  margin-bottom: 7.5px;
+}
+
+.flag-icon1{
+  height: 15px;
+  vertical-align: middle;
+}
+
+.article-info-sub-div{
+  line-height: 14.8px;
+  margin-left: 3.5px;
+  margin-top: 2.5px;
+}
+
+.indent-second-line{
+  padding-left: 11px;
+  font-size: 12.4px;
+}
+
+.preceded-succeeded{
+  padding: 10px 24px;
+}
+
+.before-after-nationality{
+  width: 100px;
+}
+
+.sub-header{
+  font-weight: 700;
+}
+
+.precede-succeed{
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.people-group{
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+}
+
+.succeeded-by{
+  text-align: end;
+}
+
+.flag-icon2{
+  height: 13px;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.map-container{
+  text-align: center;
+  margin-top: 13px;
+  background-color: rgb(248, 249, 250);
+  border: 1px solid rgb(200,204,209);
+  padding: 3px;
+  width: 223px;
+}
+
+.map-photo{
+  width: 220px;
+  border: 1px solid rgb(200,204,209);
+}
+
+.map-text{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.3px;
+  padding: 0 3px 3px 3px;
+}
+
+.map-text figcaption {
+  text-align: left;
+}
+
+.map-text div{
+  width: 180px;
+  text-align: left;
+  line-height: 17.4px;
+}
+
+.main-content-bottom-container1{
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid rgb(162,169,177);
+  border-right: 1px solid rgb(162,169,177);
+  border-top: 1px solid rgb(162,169,177);
+  margin-top: 18px;
+}
+
+.main-content-bottom-container1-inner{
+  background-color: rgb(253,253,253);
+  border-bottom: 1px solid rgb(162,169,177);
+  padding: 3px;
+}
+
+.flexbox-bottom-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(204,204,255);
+  padding: 3px 12.3px;
+}
+
+.bottom-links-header{
+  font-weight: 700;
+}
+
+.bottom-links-left{
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 18.4px;
+}
+
+.bottom-links-right{
+  font-size: 12.3px;
+}
+
+.main-content-bottom-container2{
+  padding: 5px;
+  border: 1px solid rgb(162,169,177);
+  background-color: rgb(248, 249, 250);
+  line-height: 22px;
+  margin: 19px 0 74px 0;
+}
+
+.main-content-bottom-container2 ul{
+  display: inline;
+  padding: 0;
+}
+
+.main-content-bottom-container2 li{
+  list-style-type: none;
+  display: inline;
+}
+
+.first-list-item{
+  padding: 0 7px 0 3px;
+}
+
+.list-item-border{
+  border-left: 1px solid rgb(162,169,177);
+  padding: 0 7px;
+}
+
+.edit-link{
+  font-size: 13px;
+}
+
+
+
+/*FOOTER*/
+
+footer{
+  margin: 8px 52px 83.5px 52px;
+  border-top: 1px solid rgb(162, 169, 177);
+}
+
+.footer-top-container{
+  padding: 12px 0 0 0;
+}
+
+footer div{
+  font-size: 12px;
+  line-height: 16.8px;
+  padding: 6px 0;
+}
+
+.wiki-bottom-links{
+  display: flex;
+  line-height: 24px;
+}
+
+.wiki-bottom-links ul{
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.wiki-bottom-links li{
+  list-style-type: none;
+  display: inline;
+  padding: 0 8.7px 0 0;
+}
+
+.wiki-bottom-buttons-container{
+  text-align: end;
+  padding: 0;
+}
+
+.wiki-bottom-buttons{
+  width: 88px;
+  height: 31px;
+  padding-left: 3px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:720px) {
+  .header{
+      padding-left: 18px;
+      padding-right: 18px;
+  }
+
+  .wikipedia-globe-icon{
+      display: none;
+  }
+
+  .header-middle-section{
+      display: none;
+  }
+
+  .header-right-grid-container{
+      justify-content: end;
+  }
+
+  .article-links2{
+      display: none;
+  }
+
+  .create-account-link{
+      display: none;
+  }
+
+  .fixed-pos-fullscreen-button{
+      display: none;
+  }
+
+  .login-link{
+      display: none;
+  }
+
+  .sidebar{
+      margin-left: -338px;
+  }
+  
+  .main-container{
+      padding-right: 24px;
+      padding-left: 24px;
+  }
+
+  footer{
+      margin: 8px 24px 83.5px 24px;
+  }
+}
+
+@media (min-width:720.1px) and (max-width:1000px) {
+  .header{
+      padding-left: 18px;
+      padding-right: 18px;
+  }
+
+  .header-middle-section{
+      display: none;
+  }
+
+  .header-right-grid-container{
+      justify-content: end;
+  }
+
+  .create-account-link{
+      padding: 0 2px 0 2.5px;
+  }
+
+  .fixed-pos-fullscreen-button{
+      display: none;
+  }
+
+  .login-link{
+      padding: 0 6px 0 6px;
+  }
+
+  .sidebar{
+      margin-left: -338px;
+  }
+  
+  .main-container{
+      padding-right: 24px;
+      padding-left: 24px;
+  }
+
+  footer{
+      margin: 8px 52px 83.5px 52px;
+  }
+}
+
+@media (min-width:1000.1px) and (max-width:1200px){
+  .header{
+   padding-left: 38px;
+   padding-right: 38px;
+  }
+  
+   .search-icon{
+       display: none;
+   }
+
+   .list-bullet-menu{
+      display: none;
+   }
+
+   .sidebar{
+      width: 182px;
+      padding: 0 52px 0 44px;
+   }
+
+   .main-container{
+      padding-right: 44px;
+      padding-left: 276px;
+  }
+}
+
+@media (min-width:1200.1px) {
+  .search-icon{
+      display: none;
+  }
+  
+  .list-bullet-menu{
+      display: none;
+   }
+}
