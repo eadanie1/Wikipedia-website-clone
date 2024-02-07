@@ -1,13 +1,15 @@
 // This is the devbranch SCSS file
 
 @import 'normalize.scss';
+@import 'partials/variables.scss';
+@import 'components.scss';
 
 body{
   margin: 0;
   background-color: rgb(248, 249, 250);
   font-family: sans-serif;
   font-size: 14px;
-  color: rgb(32,33,34);
+  color: $secondary-color;
 }
 
 h2 {
@@ -75,7 +77,7 @@ small {
 }
 
 .header-hamburger-menu:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);    
   padding: 5px;
   margin-right: 14.5px;
@@ -120,20 +122,18 @@ small {
   margin-right: 12px;
 }
 
-.search-bar{/*Unsure how to place the search icon
-  inside the placeholder, so only making it visible 
-  once it's shown on its own @<1000px browser window size*/
+.search-bar{
   padding: 7px;
   flex: 1;
   height: 32px;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
 }
 
 .search-button{
   background-color: rgb(248, 249, 250);
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   height: 32px;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -146,12 +146,12 @@ small {
 }
 
 .search-button:hover{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(255, 255, 255);    
 }
 
 .search-button:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);    
 }
 
@@ -179,7 +179,7 @@ small {
 }
 
 .search-icon:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);    
   padding: 5.5px;
   margin-right: 13.5px;
@@ -203,7 +203,7 @@ small {
 }
 
 .ellipsis-icon:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);    
   padding: 5px;
   margin-left: 0.5px;
@@ -242,7 +242,7 @@ small {
 
 .sidebar-link-top{
   padding-top: 6px;
-  color:rgb(32,33,34);
+  color: $secondary-color;
 }
 
 .sidebar-links{
@@ -258,18 +258,18 @@ small {
   right: 8px;
   padding: 5.4px;
   background-color: rgb(248,249,250);
-  border: 0.75px solid rgb(162, 169, 177);
+  border: 0.75px solid $border-color;
   border-radius: 2px;
   transition: background-color 0.15s;
 }
 
 .fixed-pos-fullscreen-button:hover{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(255, 255, 255);   
 }
 
 .fixed-pos-fullscreen-button:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);  
 }
 
@@ -294,7 +294,7 @@ small {
 }
 
 .heading-container{
-  border-bottom: 1px solid rgb(162, 169, 177);
+  border-bottom: 1px solid $border-color;
 }
 
 .list-bullet-menu{
@@ -311,7 +311,7 @@ small {
 }
 
 .list-bullet-menu:active{
-  border:1px solid rgb(162, 169, 177);
+  border:1px solid $border-color;
   background-color: rgb(232, 231, 231);    
   padding: 5px;
   margin-right: 14.5px;
@@ -566,7 +566,7 @@ small {
 
 .sub-header-container{
   margin: 24px 0 6px 0;
-  border-bottom: 1px solid rgb(162, 169, 177);
+  border-bottom: 1px solid $border-color;
 }
 
 .main-sub-headers{
@@ -607,9 +607,9 @@ sup{
 }
 
 .article-info-container{
-  border-left: 1px solid rgb(162,169,177);
-  border-right: 1px solid rgb(162,169,177);
-  border-top: 1px solid rgb(162,169,177);
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   background-color: rgb(248, 249, 250);
 }
 
@@ -633,7 +633,7 @@ sup{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid rgb(162,169,177);
+  border-bottom: 1px solid $border-color;
   padding: 6.2px 0;
   font-size: 12.4px;
 }
@@ -653,7 +653,7 @@ figure {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  border-bottom: 1px solid rgb(162,169,177);
+  border-bottom: 1px solid $border-color;
   padding: 4.94px 7.4px;
   font-size: 12.4px;
 }
@@ -770,15 +770,15 @@ figure {
 .main-content-bottom-container1{
   display: flex;
   flex-direction: column;
-  border-left: 1px solid rgb(162,169,177);
-  border-right: 1px solid rgb(162,169,177);
-  border-top: 1px solid rgb(162,169,177);
+  border-left: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   margin-top: 18px;
 }
 
 .main-content-bottom-container1-inner{
   background-color: rgb(253,253,253);
-  border-bottom: 1px solid rgb(162,169,177);
+  border-bottom: 1px solid $border-color;
   padding: 3px;
 }
 
@@ -806,7 +806,7 @@ figure {
 
 .main-content-bottom-container2{
   padding: 5px;
-  border: 1px solid rgb(162,169,177);
+  border: 1px solid $border-color;
   background-color: rgb(248, 249, 250);
   line-height: 22px;
   margin: 19px 0 74px 0;
@@ -827,7 +827,7 @@ figure {
 }
 
 .list-item-border{
-  border-left: 1px solid rgb(162,169,177);
+  border-left: 1px solid $border-color;
   padding: 0 7px;
 }
 
@@ -841,7 +841,7 @@ figure {
 
 footer{
   margin: 8px 52px 83.5px 52px;
-  border-top: 1px solid rgb(162, 169, 177);
+  border-top: 1px solid $border-color;
 }
 
 .footer-top-container{
