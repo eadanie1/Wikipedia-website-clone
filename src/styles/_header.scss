@@ -1,0 +1,160 @@
+.header{
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  column-gap: 36px;
+  padding: 8px 46px 0px 46px;
+  margin-bottom: 39px;
+  height: 50px;
+}
+
+.header-left-section{
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.header-hamburger-menu{
+  height: 20px;
+  padding: 6px;
+  margin-right: 14px;
+  transition: background-color 0.15s;
+}
+
+.header-hamburger-menu:hover{
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header-hamburger-menu:active{
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5px;
+  margin-right: 14.5px;
+}
+
+.wiki-container{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.wikipedia-globe-icon{
+  height: 50px;
+  margin-right: 10px;
+}
+
+.wikipedia-logos-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wikipedia-wordmark-icon{
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+.wikipedia-tagline-icon{
+  width: 117px;
+}
+
+.header-right-grid-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-middle-section{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 476.5px;
+  margin-right: 12px;
+}
+
+.search-bar{
+  padding: 7px;
+  flex: 1;
+  height: 32px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border: $border-properties;
+}
+
+.search-button{
+  background-color: $primary-background-color;
+  border: $border-properties;
+  height: 32px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 11px;
+  overflow: hidden;
+  transition: background-color 0.15s;
+}
+
+.search-button:hover{
+  border: $border-properties;
+  background-color: $button-hover-background-color;    
+}
+
+.search-button:active{
+  border: $border-properties;
+  background-color: $button-background-color;    
+}
+
+.header-right-section{
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-container{
+  display: flex;
+  align-items: center;
+}
+
+.search-icon{
+  height: 20px;
+  padding: 6px;
+  margin-right: 12px;
+  transition: background-color 0.15s;
+}
+
+.search-icon:hover{
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-icon:active{
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5.5px;
+  margin-right: 13.5px;
+}
+
+.login-link{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.ellipsis-icon{
+  height: 20px;
+  padding: 6px;
+  transition: background-color 0.15s;
+}
+
+.ellipsis-icon:hover{
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ellipsis-icon:active{
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5px;
+  margin-left: 0.5px;
+}
