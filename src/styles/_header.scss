@@ -1,0 +1,156 @@
+@import 'partials/variables';
+
+.header {
+  display: grid;
+  grid-template-columns: 254px 1fr;
+  column-gap: 36px;
+  padding: 8px 46px 0px 46px;
+  margin-bottom: 39px;
+  height: 50px;
+}
+
+.header__left-section {
+  @extend %shared-layout-align;
+  height: 50px;
+}
+
+.header__hamburger-menu {
+  height: 20px;
+  padding: 6px;
+  margin-right: 14px;
+  transition: background-color 0.15s;
+}
+
+.header__hamburger-menu:hover {
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header__hamburger-menu:active {
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5px;
+  margin-right: 14.5px;
+}
+
+.header__wiki-container {
+  @extend %shared-layout-align;
+  cursor: pointer;
+}
+
+.header__wikipedia-globe-icon {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header__wikipedia-logos-container {
+  @extend %shared-layout-align;
+  flex-direction: column;
+}
+
+.header__wikipedia-wordmark-icon {
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+.header__wikipedia-tagline-icon {
+  width: 117px;
+}
+
+.header__right-grid-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__middle-section {
+  @extend %shared-layout-align;
+  flex: 1;
+  max-width: 476.5px;
+  margin-right: 12px;
+}
+
+.header__search-bar {
+  padding: 7px;
+  flex: 1;
+  height: 32px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border: $border-properties;
+}
+
+.header__search-button {
+  background-color: $primary-background-color;
+  border: $border-properties;
+  height: 32px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  margin-left: -3px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 11px;
+  overflow: hidden;
+  transition: background-color 0.15s;
+}
+
+.header__search-button:hover {
+  border: $border-properties;
+  background-color: $button-hover-background-color;    
+}
+
+.header__search-button:active {
+  border: $border-properties;
+  background-color: $button-background-color;    
+}
+
+.header__right-section {
+  @extend %shared-layout-align;
+}
+
+.header__search-icon-container {
+  @extend %shared-layout-align;
+}
+
+.header__search-icon {
+  height: 20px;
+  padding: 6px;
+  margin-right: 12px;
+  transition: background-color 0.15s;
+}
+
+.header__search-icon:hover {
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header__search-icon:active {
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5.5px;
+  margin-right: 13.5px;
+}
+
+.header__login-link {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.header__ellipsis-icon {
+  height: 20px;
+  padding: 6px;
+  transition: background-color 0.15s;
+}
+
+.header__ellipsis-icon:hover {
+  background-color: $primary-background-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header__ellipsis-icon:active {
+  border: $border-properties;
+  background-color: $button-background-color;    
+  padding: 5px;
+  margin-left: 0.5px;
+}

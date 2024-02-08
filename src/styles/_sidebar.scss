@@ -1,0 +1,59 @@
+@import 'partials/variables';
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 147px;
+  left: 0;
+  bottom: 295px;
+  width: 234px;
+  padding: 0 52px 0 52px;
+  z-index: $z-index-low;
+}
+
+.sidebar-hide-link{
+  font-size: 13.3px;
+}
+
+.sidebar-hide-link:hover{
+  text-decoration: none;
+}
+
+.sidebar-heading{
+  border-bottom: $custom-border-properties;
+  color: $sidebar-color;
+  padding-bottom: 7px;
+}
+
+.sidebar-link-top{
+  padding-top: 6px;
+  color: $primary-color;
+}
+
+.sidebar-links{
+  padding-bottom: 12px;
+}
+
+.fixed-pos-fullscreen-button{
+  @extend %shared-layout-align;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  padding: 5.4px;
+  background-color: $primary-background-color;
+  border: 0.75px solid $border-color;
+  border-radius: 2px;
+  transition: background-color 0.15s;
+}
+
+.fixed-pos-fullscreen-button:hover{
+  border: $border-properties;
+  background-color: $button-hover-background-color;   
+}
+
+.fixed-pos-fullscreen-button:active{
+  border: $border-properties;
+  background-color: $button-background-color;  
+}

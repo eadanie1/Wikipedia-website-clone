@@ -6,7 +6,6 @@ import gulpSass from 'gulp-sass';
 import cleanCSS from 'gulp-clean-css';
 import uglify from 'gulp-uglify';
 import imagemin from 'gulp-imagemin';
-import concat from 'gulp-concat';
 
 const sass = gulpSass(sassPackage);
 
@@ -19,7 +18,6 @@ export function minifyHTML() {
 export function compileSass() {
   return gulp.src('src/styles/**/*.scss')
     .pipe(sass())
-    .pipe(concat('main.css'))
     .pipe(gulp.dest('src/css'))
 }
 
