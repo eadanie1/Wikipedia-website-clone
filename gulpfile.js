@@ -16,7 +16,7 @@ export function minifyHTML() {
 }
 
 export function compileSass() {
-  return gulp.src('src/styles/**/*.scss')
+  return gulp.src('src/styles/main.scss')
     .pipe(sass())
     .pipe(gulp.dest('src/css'))
 }

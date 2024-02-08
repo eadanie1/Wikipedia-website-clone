@@ -310,22 +310,22 @@ template {
   display: none;
 }
 
-#main-flexbox-container {
+#main__flexbox-container {
   display: flex;
   justify-content: center;
 }
 
-.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
+.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .main__fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
   display: flex;
   align-items: center;
 }
 
-#main-flexbox-container {
+#main__flexbox-container {
   display: flex;
   justify-content: center;
 }
 
-.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
+.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .main__fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
   display: flex;
   align-items: center;
 }
@@ -343,12 +343,6 @@ h2 {
   padding: 0;
   font-size: 14px;
   font-weight: 400;
-}
-
-.content-body {
-  background-color: white;
-  max-width: 1600px;
-  position: relative;
 }
 
 a {
@@ -370,12 +364,12 @@ small {
   margin: 18px 0;
 }
 
-#main-flexbox-container {
+#main__flexbox-container {
   display: flex;
   justify-content: center;
 }
 
-.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
+.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .main__fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
   display: flex;
   align-items: center;
 }
@@ -520,12 +514,12 @@ footer div {
     display: none;
   }
 }
-#main-flexbox-container {
+#main__flexbox-container {
   display: flex;
   justify-content: center;
 }
 
-.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
+.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .main__fixed-pos-fullscreen-button, .header__search-icon-container, .header__right-section, .header__middle-section, .header__wikipedia-logos-container, .header__wiki-container, .header__left-section {
   display: flex;
   align-items: center;
 }
@@ -673,12 +667,12 @@ footer div {
   margin-left: 0.5px;
 }
 
-#main-flexbox-container {
+#main__flexbox-container {
   display: flex;
   justify-content: center;
 }
 
-.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .fixed-pos-fullscreen-button, .header__left-section, .header__wiki-container, .header__wikipedia-logos-container, .header__middle-section, .header__right-section, .header__search-icon-container {
+.flexbox-bottom-links, figure, .article-container1, .tools-dropdown, .language-dropdown, .container, .main__fixed-pos-fullscreen-button, .header__left-section, .header__wiki-container, .header__wikipedia-logos-container, .header__middle-section, .header__right-section, .header__search-icon-container {
   display: flex;
   align-items: center;
 }
@@ -695,30 +689,30 @@ footer div {
   z-index: 100;
 }
 
-.sidebar-hide-link {
+.sidebar__hide-link {
   font-size: 13.3px;
 }
 
-.sidebar-hide-link:hover {
+.sidebar__hide-link:hover {
   text-decoration: none;
 }
 
-.sidebar-heading {
+.sidebar__heading {
   border-bottom: 1px solid rgb(234, 234, 234);
   color: rgb(84, 89, 93);
   padding-bottom: 7px;
 }
 
-.sidebar-link-top {
+.sidebar__link-top {
   padding-top: 6px;
   color: rgb(32, 33, 34);
 }
 
-.sidebar-links {
+.sidebar__links {
   padding-bottom: 12px;
 }
 
-.fixed-pos-fullscreen-button {
+.main__fixed-pos-fullscreen-button {
   justify-content: center;
   position: fixed;
   bottom: 10px;
@@ -730,17 +724,22 @@ footer div {
   transition: background-color 0.15s;
 }
 
-.fixed-pos-fullscreen-button:hover {
+.main__fixed-pos-fullscreen-button:hover {
   border: 1px solid rgb(162, 169, 177);
   background-color: rgb(255, 255, 255);
 }
 
-.fixed-pos-fullscreen-button:active {
+.main__fixed-pos-fullscreen-button:active {
   border: 1px solid rgb(162, 169, 177);
   background-color: rgb(232, 231, 231);
 }
 
-/*MAIN CONTENT*/
+.main__content-body {
+  background-color: white;
+  max-width: 1600px;
+  position: relative;
+}
+
 .main-container {
   padding: 0 107px 0 336px;
   max-width: 970px;
