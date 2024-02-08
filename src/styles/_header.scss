@@ -1,4 +1,6 @@
-.header{
+@import 'partials/variables';
+
+.header {
   display: grid;
   grid-template-columns: 254px 1fr;
   column-gap: 36px;
@@ -7,72 +9,68 @@
   height: 50px;
 }
 
-.header-left-section{
-  display: flex;
-  align-items: center;
+.header__left-section {
+  @extend %shared-layout-align;
   height: 50px;
 }
 
-.header-hamburger-menu{
+.header__hamburger-menu {
   height: 20px;
   padding: 6px;
   margin-right: 14px;
   transition: background-color 0.15s;
 }
 
-.header-hamburger-menu:hover{
+.header__hamburger-menu:hover {
   background-color: $primary-background-color;
   border-radius: 2px;
   cursor: pointer;
 }
 
-.header-hamburger-menu:active{
+.header__hamburger-menu:active {
   border: $border-properties;
   background-color: $button-background-color;    
   padding: 5px;
   margin-right: 14.5px;
 }
 
-.wiki-container{
-  display: flex;
-  align-items: center;
+.header__wiki-container {
+  @extend %shared-layout-align;
   cursor: pointer;
 }
 
-.wikipedia-globe-icon{
+.header__wikipedia-globe-icon {
   height: 50px;
   margin-right: 10px;
 }
 
-.wikipedia-logos-container{
-  display: flex;
+.header__wikipedia-logos-container {
+  @extend %shared-layout-align;
   flex-direction: column;
-  align-items: center;
 }
 
-.wikipedia-wordmark-icon{
+.header__wikipedia-wordmark-icon {
   width: 120px;
   margin-bottom: 5px;
 }
 
-.wikipedia-tagline-icon{
+.header__wikipedia-tagline-icon {
   width: 117px;
 }
 
-.header-right-grid-container{
+.header__right-grid-container {
   display: flex;
   justify-content: space-between;
 }
 
-.header-middle-section{
-  display: flex;
-  align-items: center;
+.header__middle-section {
+  @extend %shared-layout-align;
   flex: 1;
   max-width: 476.5px;
   margin-right: 12px;
 }
 
-.search-bar{
+.header__search-bar {
   padding: 7px;
   flex: 1;
   height: 32px;
@@ -81,7 +79,7 @@
   border: $border-properties;
 }
 
-.search-button{
+.header__search-button {
   background-color: $primary-background-color;
   border: $border-properties;
   height: 32px;
@@ -95,64 +93,62 @@
   transition: background-color 0.15s;
 }
 
-.search-button:hover{
+.header__search-button:hover {
   border: $border-properties;
   background-color: $button-hover-background-color;    
 }
 
-.search-button:active{
+.header__search-button:active {
   border: $border-properties;
   background-color: $button-background-color;    
 }
 
-.header-right-section{
-  display: flex;
-  align-items: center;
+.header__right-section {
+  @extend %shared-layout-align;
 }
 
-.search-icon-container{
-  display: flex;
-  align-items: center;
+.header__search-icon-container {
+  @extend %shared-layout-align;
 }
 
-.search-icon{
+.header__search-icon {
   height: 20px;
   padding: 6px;
   margin-right: 12px;
   transition: background-color 0.15s;
 }
 
-.search-icon:hover{
+.header__search-icon:hover {
   background-color: $primary-background-color;
   border-radius: 2px;
   cursor: pointer;
 }
 
-.search-icon:active{
+.header__search-icon:active {
   border: $border-properties;
   background-color: $button-background-color;    
   padding: 5.5px;
   margin-right: 13.5px;
 }
 
-.login-link{
+.header__login-link {
   margin-left: 8px;
   margin-right: 8px;
 }
 
-.ellipsis-icon{
+.header__ellipsis-icon {
   height: 20px;
   padding: 6px;
   transition: background-color 0.15s;
 }
 
-.ellipsis-icon:hover{
+.header__ellipsis-icon:hover {
   background-color: $primary-background-color;
   border-radius: 2px;
   cursor: pointer;
 }
 
-.ellipsis-icon:active{
+.header__ellipsis-icon:active {
   border: $border-properties;
   background-color: $button-background-color;    
   padding: 5px;

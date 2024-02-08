@@ -1,0 +1,171 @@
+@import 'partials/variables';
+
+footer {
+  margin: 8px 52px 83.5px 52px;
+  border-top: $border-properties;
+}
+
+.footer-top-container {
+  padding: 12px 0 0 0;
+}
+
+footer div {
+  font-size: 12px;
+  line-height: 16.8px;
+  padding: 6px 0;
+}
+
+.wiki-bottom-links {
+  display: flex;
+  line-height: 24px;
+}
+
+.wiki-bottom-links ul {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.wiki-bottom-links li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 8.7px 0 0;
+}
+
+.wiki-bottom-buttons-container {
+  text-align: end;
+  padding: 0;
+}
+
+.wiki-bottom-buttons {
+  width: 88px;
+  height: 31px;
+  padding-left: 3px;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:720px) {
+  .header{
+      padding-left: 18px;
+      padding-right: 18px;
+  }
+
+  .wikipedia-globe-icon{
+      display: none;
+  }
+
+  .header-middle-section{
+      display: none;
+  }
+
+  .header-right-grid-container{
+      justify-content: end;
+  }
+
+  .article-links2{
+      display: none;
+  }
+
+  .create-account-link{
+      display: none;
+  }
+
+  .fixed-pos-fullscreen-button{
+      display: none;
+  }
+
+  .login-link{
+      display: none;
+  }
+
+  .sidebar{
+      margin-left: -338px;
+  }
+  
+  .main-container{
+      padding-right: 24px;
+      padding-left: 24px;
+  }
+
+  footer{
+      margin: 8px 24px 83.5px 24px;
+  }
+}
+
+@media (min-width:720.1px) and (max-width:1000px) {
+  .header{
+      padding-left: 18px;
+      padding-right: 18px;
+  }
+
+  .header-middle-section{
+      display: none;
+  }
+
+  .header-right-grid-container{
+      justify-content: end;
+  }
+
+  .create-account-link{
+      padding: 0 2px 0 2.5px;
+  }
+
+  .fixed-pos-fullscreen-button{
+      display: none;
+  }
+
+  .login-link{
+      padding: 0 6px 0 6px;
+  }
+
+  .sidebar{
+      margin-left: -338px;
+  }
+  
+  .main-container{
+      padding-right: 24px;
+      padding-left: 24px;
+  }
+
+  footer{
+      margin: 8px 52px 83.5px 52px;
+  }
+}
+
+@media (min-width:1000.1px) and (max-width:1200px) {
+  .header{
+   padding-left: 38px;
+   padding-right: 38px;
+  }
+  
+   .search-icon{
+       display: none;
+   }
+
+   .list-bullet-menu{
+      display: none;
+   }
+
+   .sidebar{
+      width: 182px;
+      padding: 0 52px 0 44px;
+   }
+
+   .main-container{
+      padding-right: 44px;
+      padding-left: 276px;
+  }
+}
+
+@media (min-width:1200.1px) {
+  .search-icon{
+      display: none;
+  }
+  
+  .list-bullet-menu{
+      display: none;
+   }
+}

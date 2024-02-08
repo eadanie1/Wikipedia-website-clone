@@ -1,3 +1,5 @@
+@import 'partials/variables';
+
 .sidebar{
   display: flex;
   flex-direction: column;
@@ -34,8 +36,7 @@
 }
 
 .fixed-pos-fullscreen-button{
-  display: flex;
-  align-items: center;
+  @extend %shared-layout-align;
   justify-content: center;
   position: fixed;
   bottom: 10px;
